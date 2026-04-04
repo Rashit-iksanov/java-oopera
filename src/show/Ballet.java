@@ -1,7 +1,10 @@
-import java.util.ArrayList;
+package show;
+
+import person.Director;
+import person.Person;
 
 class Ballet extends MusicalShow {
-    public Person choreographer;
+    private Person choreographer;
 
     public Ballet(Director director, String title, int duration, Person musicAuthor, String librettoText, Person choreographer) {
         super(director, title, duration, musicAuthor, librettoText);

@@ -1,10 +1,13 @@
-import java.util.ArrayList;
+package show;
+
+import person.Director;
+import person.Person;
 
 public class MusicalShow extends Show {
     protected Person musicAuthor;
     protected String librettoText;
 
-    public MusicalShow(Director director, String title, int duration, Person musicAuthor,String librettoText) {
+    public MusicalShow(Director director, String title, int duration, Person musicAuthor, String librettoText) {
         super(director, title, duration);
         this.musicAuthor = musicAuthor;
         this.librettoText = librettoText;

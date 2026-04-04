@@ -1,6 +1,8 @@
-class Director extends Person {
+package person;
 
-    int numberOfShows;
+public class Director extends Person {
+
+    protected int numberOfShows;
 
     public Director(Gender gender, String name, String surname, int numberOfShows) {
         super(gender, name, surname);

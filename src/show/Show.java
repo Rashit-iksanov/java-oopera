@@ -1,4 +1,10 @@
+package show;
+
+import person.Actor;
+import person.Director;
+
 import java.util.ArrayList;
+
 
 public class Show {
     protected String title;
@@ -13,7 +19,7 @@ public class Show {
         this.listOfActors = new ArrayList<>();
     }
 
-    public void printActors () {
+    public void printActors() {
         System.out.println("Список актеров: ");
         for (Actor actor : listOfActors) {
             System.out.println(" *** " + actor);
@@ -31,7 +37,7 @@ public class Show {
     public void replaceActor(String surnameToReplace, Actor newActor) {
         int index = -1;
         for (int i = 0; i < listOfActors.size(); i++) {
-            if (listOfActors.get(i).surname.equals(surnameToReplace)) {
+            if (listOfActors.get(i).getSurname().equals(surnameToReplace)) {
                 index = i;
                 break;
             }
@@ -44,7 +50,7 @@ public class Show {
         }
     }
 
-    public Director getDirector() {
-        return director;
+    public void printDirector() {
+        System.out.println("Режиссёр: " + director);
     }
 }

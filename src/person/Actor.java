@@ -1,3 +1,5 @@
+package person;
+
 import java.util.Objects;
 
 public class Actor extends Person {
@@ -8,7 +10,9 @@ public class Actor extends Person {
         this.height = height;
     }
 
-    public int getHeight() { return height; }
+    public int getHeight() {
+        return height;
+    }
 
     @Override
     public boolean equals(Object object) {
